@@ -8,10 +8,10 @@ set -e
 
 echo ""
 echo "  +=============================================================+"
-echo "  |           Kindle Disk Filler Utility v2.0                  |"
+echo "  |           Kindle Disk Filler Utility v2.0                   |"
 echo "  +=============================================================+"
-echo "  |  Fills disk to prevent auto-updates on unregistered          |"
-echo "  |  tablets. Useful for jailbreak preparation.                   |"
+echo "  |      Fills disk to prevent auto-updates on unregistered     |"
+echo "  |         tablets. Useful for jailbreak preparation.          |"
 echo "  +=============================================================+"
 echo ""
 
@@ -150,9 +150,9 @@ done
 
 printf '\n'
 echo "  +---------------------------------------------------------+"
-echo "  |  Disk fill complete!                                      |"
-echo "  |  Files created: $i"
-echo "  |  Target directory: $dir"
+echo "  |  Disk fill complete!                                    |"
+echo "  |  Files created: $i                                      |"
+echo "  |  Target directory: $dir                                 |"
 echo "  +---------------------------------------------------------+"
 echo ""
 read -p "Press Enter to exit..." _
