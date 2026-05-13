@@ -146,9 +146,9 @@ while ($true) {
 
 Write-Host ""
 Write-Host "  +---------------------------------------------------------+"
-Write-Host "  |  Disk fill complete!                                      |"
-Write-Host "  |  Files created: $i"
-Write-Host "  |  Target directory: $dir"
+Write-Host "  |  Disk fill complete!                                    |"
+Write-Host "  |  Files created: $i                                      |"
+Write-Host "  |  Target directory: $dir                                 |"
 Write-Host "  +---------------------------------------------------------+"
 Write-Host ""
 Read-Host "Press Enter to exit"
