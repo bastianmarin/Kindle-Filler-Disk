@@ -2,6 +2,9 @@
 
 Fill Kindle storage to block automatic updates.
 
+> [!WARNING]  
+> Always verify the target drive is your Kindle before running the tool. Kindle Disk Filler will fill any disks that the tool runs on, regardless of size. Selecting the wrong drive will fill it to capacity and may cause system failure.
+
 ## Quick Run
 
 **Linux / macOS:**
