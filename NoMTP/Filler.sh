@@ -35,15 +35,16 @@ get_free_mb() {
 
 create_file () {
     local size=$1 path=$2
+    local mb=${size%M}
 
-    if command -v fallocate >/dev/null 2>&1; then
-        fallocate -l "$size" "$path"  && return
-    fi
-    if command -v mkfile    >/dev/null 2>&1; then
-        mkfile "$size" "$path"        && return
+    # Convert G to MB
+    if [[ "$size" == *G ]]; then
+        mb=$(( ${size%G} * 1024 ))
     fi
 
-    dd if=/dev/zero of="$path" bs="$size" count=1 status=none
+    rm -f "$path"
+
+    dd if=/dev/zero of="$path" bs=1M count="$mb" conv=fsync status=progress
 }
 
 render_progress() {
